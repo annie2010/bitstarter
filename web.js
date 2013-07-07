@@ -2,7 +2,7 @@ var express = require('express');
 var fs = require('fs');
 
 var app = express.createServer(express.logger());
-var txt = new Buffer(24);
+var txt = new Buffer(9600);
 
 function readFileSync_encoding(filename, encoding) {
     var buffer = fs.readFileSync(filename);
